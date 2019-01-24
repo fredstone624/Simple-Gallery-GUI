@@ -1,13 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Simple Gallery - Главная</title>
+
+    <!-- Include stylesheets -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../common/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../common/css/mdb.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- End include stylesheets -->
+
 </head>
+
 <body>
-    
+    <div id="mdb-preloader" class="flex-center">
+        <div id="preloader-markup"></div>
+    </div>
+
+    <header class="header" id="home">
+        <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" role="navigation">
+            <a class="navbar-brand" href="#">
+                <img class="navbar-brand__image" src="image/logo.png" alt="Logotype">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul  class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Домашняя</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-info" href="#login">Вход</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-info" href="#register">Регистрация</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="view intro-2">
+            <div class="full-bg-img">
+                <div class="mask flex-center">
+                    <div class="container header-info white-text wow fadeInUp">
+                        <h1 class="header-info__main">Добро пожаловать!</h1>
+                        <p class="header-info__desc">На веб-сервис &laquo;Simple Gallery&raquo;</p>
+                        <a class="btn btn-white header-info__butt" href="/Profile" title="Переход к галереи">Перейти к галереи</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Include scripts -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="../common/js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../common/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../common/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../common/js/mdb.js"></script>
+        <!-- Custom JavaScript -->
+    <script src="js/layout.js"></script>
+	<!-- End include scripts -->
+
 </body>
 </html>
