@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,101 +21,116 @@
     <!-- End include stylesheets -->
 
 </head>
-<body>
+
+<body aria-busy="true">
+    <!-- Preloader -->
     <div id="mdb-preloader" class="flex-center">
         <div id="preloader-markup"></div>
     </div>
+    <!-- End preloader -->
 
+    <!-- Section: Header -->
     <header class="header" id="header">
-
+        <!-- Section: Navigatiom -->
         <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" role="navigation">
             <a class="navbar-brand" href="#">
-                <img class="navbar-brand__image img-fluid" src="image/logo.png" alt="Logotype">
+                <img class="navbar-brand__image img-fluid" src="image/logo.png" alt="Логотип">
             </a>
             <button class="navbar-toggler" id="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Меню навигации">
+                <div class="animated-icon"><span></span><span></span><span></span></div>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul  class="nav navbar-nav smooth-scroll font-weight-bold text-uppercase">
-                    <li class="nav-item"><a class="nav-link js_link active" href="#home">Домашняя</a></li>
-                    <li class="nav-item"><a class="nav-link js_link" href="#about">О нас</a></li>
-                    <li class="nav-item"><a class="nav-link js_link" href="#contact">Контакты</a></li>
-                    <li class="nav-item"><a class="nav-link js_link btn btn-outline-info" href="#login">Вход</a></li>
-                    <li class="nav-item"><a class="nav-link js_link btn btn-outline-info" href="#register">Регистрация</a></li>
+                <ul class="nav navbar-nav smooth-scroll text-uppercase">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Домашняя</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-info btn-rounded waves-effect" href="#login">Вход</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-info btn-rounded waves-effect" href="#register">Регистрация</a></li>
                 </ul>
             </div>
         </nav>
+        <!-- Section: Navigatiom -->
 
+        <!-- Section: Home -->
         <div class="view intro-2" id="home">
             <div class="full-bg-img">
                 <div class="mask flex-center rgba-gray">
-                    <div class="container header-info white-text wow fadeInUp">
+                    <div class="container white-text wow fadeInUp header-info">
                         <h1 class="h1-responsive font-weight-bold header-info__main">Добро пожаловать!</h1>
                         <p class="header-info__desc">На веб-сервис &laquo;Simple Gallery&raquo;</p>
-                        <a class="btn btn-white font-weight-bold hoverable header-info__butt" href="/Profile" title="Переход к галереи">Перейти к галереи</a>
+                        <a class="btn btn-white btn-rounded waves-effect header-info__butt" role="button" href="/Profile" title="Переход к галереи">Перейти
+                            к галереи</a>
                     </div>
                 </div>
             </div>
         </div>
-
+        <!-- Section: Home -->
     </header>
+    <!-- Section: Header -->
 
+    <!-- Section: Main -->
     <main id="main">
-
         <!-- Section: About -->
         <section id="about" class="text-center">
             <!-- Container -->
             <div class="container my-5">
                 <h2 class="h1-responsive font-weight-bold mb-5">О нас</h2>
-    
+
                 <!-- Grid row -->
-                <div class="row">
+                <div class="row wow bounceIn">
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
                         <div class="view overlay rounded z-depth-2 mb-4">
                             <img class="img-fluid" src="image/about/thumbnail/01.jpg" alt="About image 1">
-                            <a><div class="mask rgba-white-slight"></div></a>
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
                         </div>
-                
-                        <a href="#!" class="green-text">
+
+                        <a class="green-text">
                             <h6 class="font-weight-bold text-uppercase mb-3"><i class="fas fa-users pr-2"></i>Управление</h6>
                         </a>
                         <h4 class="font-weight-bold mb-3"><strong>Рабочая среда</strong></h4>
-                        <p class="dark-grey-text">После успешной регистрации на сайте создается профиль(или рабочая область), 
-                                где Вы можете использовать весь функционал нашего сервиса.</p>
+                        <p class="dark-grey-text">После успешной регистрации на сайте создается профиль(или рабочая
+                            область),
+                            где Вы можете использовать весь функционал нашего сервиса.</p>
                     </div>
                     <!-- Grid column -->
-            
+
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
                         <div class="view overlay rounded z-depth-2 mb-4">
                             <img class="img-fluid" src="image/about/thumbnail/02.jpg" alt="About image 2">
-                            <a><div class="mask rgba-white-slight"></div></a>
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
                         </div>
-                        <a href="#!" class="pink-text">
+                        <a class="pink-text">
                             <h6 class="font-weight-bold text-uppercase mb-3"><i class="fas fa-code pr-2"></i>Разработка</h6>
                         </a>
                         <h4 class="font-weight-bold mb-3"><strong>Минимализм</strong></h4>
-                        <p class="dark-grey-text">Возможность создания нескольких галерей, 
-                                сортировки изображений удобным для Вас способом, 
-                                удаления, а так же различных других манипуляций с Вашими изображениями.</p>
+                        <p class="dark-grey-text">Возможность создания нескольких галерей,
+                            сортировки изображений удобным для Вас способом,
+                            удаления, а так же различных других манипуляций с Вашими изображениями.</p>
                     </div>
                     <!-- Grid column -->
-                
+
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-6 mb-0">
                         <div class="view overlay rounded z-depth-2 mb-4">
                             <img class="img-fluid" src="image/about/thumbnail/03.jpg" alt="About image 3">
-                            <a><div class="mask rgba-white-slight"></div></a>
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
                         </div>
-                        <a href="#!" class="blue-text">
+                        <a class="blue-text">
                             <h6 class="font-weight-bold text-uppercase mb-3"><i class="fas fa-pencil-alt pr-2"></i>Дизайн</h6>
                         </a>
                         <h4 class="font-weight-bold mb-3"><strong>Удобство</strong></h4>
-                        <p class="dark-grey-text">Дизайн нашего проекта ариентирован на пользователя. 
-                                Тем самым, дизайн выполнен в тёплых тонах, приятных для просмотра, 
-                                и без использования запутывающей логики.</p>
+                        <p class="dark-grey-text">Дизайн нашего проекта ариентирован на пользователя.
+                            Тем самым, дизайн выполнен в тёплых тонах, приятных для просмотра,
+                            и без использования запутывающей логики.</p>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -124,19 +140,22 @@
 
             <div class="container-full-width">
                 <div class="row m-0 clearfix">
-                    <div class="col-sm-6 p-0 float-right view overlay rounded z-depth-2">
+                    <div class="col-sm-6 p-0 float-right view overlay rounded z-depth-2 wow fadeInLeftBig fast">
                         <img class="img-fluid float-right" src="image//about/large/01.jpg" alt="Изображение рабочей среды">
-                        <a><div class="mask rgba-white-slight"></div></a>
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
                     </div>
-                    <div class="col-sm-6 p-0 float-right view overlay rounded z-depth-2">
+                    <div class="col-sm-6 p-0 float-right view overlay rounded z-depth-2 wow fadeInRightBig fast">
                         <img class="img-fluid float-left" src="image/about/large/03.jpg" alt="Изображениe удобства дизайна">
-                        <a><div class="mask rgba-white-slight"></div></a>
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <!-- Our opportunities -->
-            <!--
             <div id="opportuniti">
                 <div class="view jarallax">
                     <img class="jarallax-img" src="image/opportunity.jpg" alt="">
@@ -152,104 +171,180 @@
                     </div>
                 </div>
             </div>
-            -->
             <!-- Our opportunities -->
-
-            <div id="gallery">
-                <!--First row-->
-<div class="row">
-
-        <!--First column-->
-        <div class="col-md-12">
-      
-          <div id="mdb-lightbox-ui"></div>
-      
-          <!--Full width lightbox-->
-          <div class="mdb-lightbox">
-      
-            <figure class="col-md-3">
-              <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(58).jpg" data-size="781x1172">
-                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(58).jpg" class="img-fluid">
-              </a>
-            </figure>
-      
-            <figure class="col-md-3">
-              <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(61).jpg" data-size="781x1172">
-                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(61).jpg" class="img-fluid">
-              </a>
-            </figure>
-      
-            <figure class="col-md-3">
-              <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(62).jpg" data-size="781x1172">
-                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(62).jpg" class="img-fluid">
-              </a>
-            </figure>
-      
-            <figure class="col-md-3">
-              <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(60).jpg" data-size="781x1172">
-                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(60).jpg" class="img-fluid">
-              </a>
-            </figure>
-      
-            <figure class="col-md-4">
-              <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(66).jpg" data-size="1600x1067">
-                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(66).jpg" class="img-fluid">
-              </a>
-            </figure>
-      
-            <figure class="col-md-4">
-              <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(70).jpg" data-size="1600x1067">
-                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(70).jpg" class="img-fluid">
-              </a>
-            </figure>
-      
-            <figure class="col-md-4">
-              <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(74).jpg" data-size="1600x1067">
-                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(74).jpg" class="img-fluid">
-              </a>
-            </figure>
-      
-            <figure class="col-md-3">
-              <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(64).jpg" data-size="781x1172">
-                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(64).jpg" class="img-fluid">
-              </a>
-            </figure>
-      
-            <figure class="col-md-3">
-              <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(77).jpg" data-size="781x1172">
-                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(77).jpg" class="img-fluid">
-              </a>
-            </figure>
-      
-            <figure class="col-md-3">
-              <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(78).jpg" data-size="781x1172">
-                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(78).jpg" class="img-fluid">
-              </a>
-            </figure>
-      
-            <figure class="col-md-3">
-              <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(76).jpg" data-size="781x1172">
-                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(76).jpg" class="img-fluid">
-              </a>
-            </figure>
-      
-          </div>
-          <!--/Full width lightbox-->
-      
-        </div>
-        <!--/First column-->
-      
-      </div>
-      <!--/First row-->
-            </div>
-            
         </section>
         <!-- Section: About -->
 
+        <hr class="my-5">
+
+        <!-- Section: Map -->
+        <section id="maps">
+            <!--Google map-->
+            <div id="map-container" class="z-depth-1-half map-container" style="height: 500px">
+                <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                    style="border:0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- Section: Map -->
+
+        <!--Section: Contact-->
+        <section id="contact">
+            <div class="container-fluid mb-5">
+                <!--Grid row-->
+                <div class="row" style="margin-top: -20px;">
+                    <!--Grid column-->
+                    <div class="col-md-12">
+                        <div class="card pb-5">
+                            <div class="card-body">
+                                <div class="container">
+                                    <section class="contact-section my-5 wow flipInX slow">
+                                        <!-- Form with header -->
+                                        <div class="card">
+                                            <!-- Grid row -->
+                                            <div class="row">
+                                                <!-- Grid column -->
+                                                <div class="col-lg-8">
+                                                    <form class="form card-body">
+                                                        <!-- Header -->
+                                                        <h3 class="mt-4"><i class="fas fa-envelope pr-2"></i>Связаться
+                                                            с нами:</h3>
+
+                                                        <!-- Grid row -->
+                                                        <div class="row">
+                                                            <!-- Grid column -->
+                                                            <div class="col-md-6">
+                                                                <div class="md-form mb-0">
+                                                                    <input type="text" id="form-contact-name" class="form-control">
+                                                                    <label for="form-contact-name" class="">Ваше
+                                                                        имя</label>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Grid column -->
+
+                                                            <!-- Grid column -->
+                                                            <div class="col-md-6">
+                                                                <div class="md-form mb-0">
+                                                                    <input type="text" id="form-contact-email" class="form-control">
+                                                                    <label for="form-contact-email" class="">Ваша
+                                                                        почта</label>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Grid column -->
+                                                        </div>
+                                                        <!-- Grid row -->
+
+                                                        <!-- Grid row -->
+                                                        <div class="row">
+                                                            <!-- Grid column -->
+                                                            <div class="col-md-12">
+                                                                <div class="md-form mb-0">
+                                                                    <textarea type="text" id="form-contact-message"
+                                                                        class="form-control md-textarea" rows="3"></textarea>
+                                                                    <label for="form-contact-message">Ваше
+                                                                        сообщение</label>
+                                                                    <a class="btn-floating btn-lg blue">
+                                                                        <i class="far fa-paper-plane"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Grid column -->
+                                                        </div>
+                                                        <!-- Grid row -->
+                                                    </form>
+                                                </div>
+                                                <!-- Grid column -->
+
+                                                <!-- Grid column -->
+                                                <div class="col-lg-4">
+                                                    <div class="card-body contact text-center h-100 white-text">
+                                                        <h4 class="my-4 pb-2">Контактная информация</h3>
+                                                            <ul class="text-lg-left list-unstyled ml-4">
+                                                                <li>
+                                                                    <p><i class="fas fa-map-marker-alt pr-2 mb-4"></i>г.
+                                                                        Брест, Беларусь</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p><i class="fas fa-phone pr-2 mb-4"></i><a class="text-white"
+                                                                            href="tel:+375336246410">+375 (33)
+                                                                            624-64-10</a></p>
+                                                                </li>
+                                                                <li>
+                                                                    <p><i class="fas fa-envelope pr-2"></i><a class="text-white"
+                                                                            href="mail:fredstone624@gmail.com">fredstone624@gmail.com</a></p>
+                                                                </li>
+                                                            </ul>
+                                                            <hr class="hr-light my-4">
+                                                            <ul class="list-inline text-center list-unstyled">
+                                                                <li class="list-inline-item">
+                                                                    <a class="p-2 fa-lg tw-ic" href="https://github.com/fredstone624"
+                                                                        title="GitHub"><i class="fab fa-github"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a class="p-2 fa-lg li-ic" href="https://vk.com/osipykr"
+                                                                        title="Вконтакте"><i class="fab fa-vk"></i></a>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/osipukr"
+                                                                        title="Instagram"><i class="fab fa-instagram"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- Grid column -->
+                                            </div>
+                                            <!-- Grid row -->
+                                        </div>
+                                        <!-- Form with header -->
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+        </section>
+        <!--Section: Contact-->
     </main>
+    <!-- Section: Main -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-4">
+        <!-- Footer Elements -->
+        <div class="container">
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a href="https://github.com/fredstone624" class="btn-floating btn-fb mx-1">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://vk.com/osipykr" class="btn-floating btn-tw mx-1">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/osipukr" class="btn-floating btn-gplus mx-1">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- Social buttons -->
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright: 
+            <a href="https://github.com/fredstone624">Simple Gallery</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
     <!-- Scroll to Top button -->
-    <button class="material-scrolltop" type="button"/>
+    <button class="material-scrolltop" type="button"></button>
 
     <!-- Include scripts -->
     <!-- JQuery -->
@@ -264,7 +359,8 @@
     <script type="text/javascript" src="js/material-scrolltop.js"></script>
     <!-- Custom JavaScript -->
     <script src="js/layout.js"></script>
-	<!-- End include scripts -->
+    <!-- End include scripts -->
 
 </body>
+
 </html>
