@@ -2,6 +2,8 @@ $(document).ready(function(){
     navActiveItem();
     scrollToLink();
     scrollToTop();
+
+    $("#mdb-lightbox-ui").load("../common/mdb-addons/mdb-lightbox-ui.html");
 });
 
 function navActiveItem() {
