@@ -1,15 +1,17 @@
+/* Colors */
+/* Images */
 .header {
   height: 700px;
 }
 
-.view {
+#home {
   background: url("../image/bg-header.jpg") no-repeat center center;
   background-size: cover;
   height: 100%;
 }
 
 .navbar {
-  background-color: #3138457a;
+  background-color: transparent;
 }
 
 .navbar-brand__image {
@@ -26,32 +28,33 @@
   background-color: #2d3135;
 }
 
-.mask {
+.rgba-gray {
   background: rgba(81, 87, 105, 0.4);
 }
 
 .nav {
-  margin: 0 0 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
 }
 
 .nav-item {
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 .nav-link {
   text-transform: uppercase;
-  font-weight: 400;
-  padding-right: 0;
+  font-weight: 500;
 }
 
-.active::before {
-  content: "-";
+.active::after {
+  content: " ";
   position: absolute;
-  left: 0;
-  color: #007bff;
+  top: calc(50% - 2px);
+  left: 3px;
+  width: 12px;
+  height: 4px;
+  background-color: #17bed2;
 }
 
 .header-info {
@@ -59,7 +62,7 @@
 }
 
 .header-info__main {
-  font-size: 50px;
+  font-weight: 600;
 }
 
 .header-info__desc {
@@ -67,11 +70,17 @@
 }
 
 .header-info__butt {
-  border-radius: 30px 0;
   margin-top: 15px;
+  padding: 20px 30px;
+  border-radius: 40px 10px;
+  font-weight: 500;
 }
 
 .header-info__butt:hover {
   background-color: red;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+  padding: 10px 20px;
 }
 /*# sourceMappingURL=style.css.map */
