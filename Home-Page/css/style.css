@@ -5,8 +5,7 @@
 }
 
 #home {
-  background: url("../image/bg-header.jpg") no-repeat center center;
-  background-size: cover;
+  background: url("../image/bg-header.jpg") no-repeat center center/cover;
   height: 100%;
 }
 
@@ -42,11 +41,6 @@
   padding-left: 10px;
 }
 
-.nav-link {
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
 .active::after {
   content: " ";
   position: absolute;
@@ -59,10 +53,6 @@
 
 .header-info {
   text-align: center;
-}
-
-.header-info__main {
-  font-weight: 600;
 }
 
 .header-info__desc {
@@ -82,5 +72,14 @@
 
 .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
   padding: 10px 20px;
+}
+
+.container-full-width {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#opportuniti {
+  height: 300px;
 }
 /*# sourceMappingURL=style.css.map */
