@@ -1,0 +1,142 @@
+/* Common styles */
+$rgba-gray-mask:  rgba(81,87,105,.4)
+$navbar: transparent
+$navbar-collapse: #2d3135
+$active-item: #17bed2
+$header-bg: url('../image/bg-header.jpg')
+
+#header
+    height: 100vh
+
+#home
+    background: $header-bg no-repeat center center / cover
+    height: 100%
+
+.navbar
+    background-color: $navbar
+
+    &-brand
+        &__image
+            height: 20px
+
+@media only screen and (max-width: 991px)
+    .navbar
+        background-color: $navbar-collapse
+
+.top-nav-collapse
+    background-color: $navbar-collapse
+
+.rgba-gray
+    background: $rgba-gray-mask
+
+.nav
+    align-items: inherit
+    font-weight: 400
+
+.navbar-expand-lg .navbar-nav .nav-link
+    padding-left: 20px
+    padding-right: 20px
+
+
+/* Hamburger menu */
+.animated-icon
+    width: 30px
+    height: 20px
+    position: relative
+    margin: 0px
+     transform: rotate(0deg)
+    transition: .5s ease-in-out
+    cursor: pointer
+
+    span
+        display: block
+        position: absolute
+        height: 3px
+        width: 100%
+        border-radius: 9px
+        opacity: 1
+        left: 0
+        transform: rotate(0deg)
+        transition: .25s ease-in-out
+        background: #fff
+
+        &:nth-child(1)
+            top: 0px
+            transform-origin: left center
+
+        &:nth-child(2)
+            top: 10px
+            transform-origin: left center;
+
+        &:nth-child(3)
+            top: 20px
+            transform-origin: left center
+
+    &.open 
+        span
+            &:nth-child(1)
+                transform: rotate(45deg)
+                top: 0px
+                left: 8px
+
+            &:nth-child(2)
+                width: 0%
+                opacity: 0
+
+            &:nth-child(3)
+                transform: rotate(-45deg)
+                top: 21px
+                left: 8px
+/* End Hamburger menu */
+/* End common styles */
+
+.card
+    background-color: rgba(229, 228, 255, 0.2)
+    margin-top: 30px
+
+.md-form 
+    label
+        color: #ffffff
+
+    input[type=text],
+    input[type=password]
+        &:focus:not([readonly])
+            border-bottom: 1px solid #8EDEF8
+            box-shadow: 0 1px 0 0 #8EDEF8
+
+        &:focus:not([readonly])+label
+            color: #8EDEF8
+
+    input[type="checkbox"] + label:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 17px
+        height: 17px
+        z-index: 0
+        border: 1.5px solid #fff
+        border-radius: 1px
+        margin-top: 2px
+        transition: 0.2s
+
+    input[type="checkbox"]:checked + label:before
+        top: -4px
+        left: -3px
+        width: 12px
+        height: 22px
+        border-style: solid
+        border-width: 2px
+        border-color: transparent #00c851 #00c851 transparent
+        transform: rotate(40deg)
+        transform-origin: 100% 100%
+
+    .form-control
+        color: #fff
+
+h6 
+    line-height: 1.7
+
+.navbar.navbar-dark form .md-form input:focus:not([readonly])
+    border-color: #8EDEF8
+    
