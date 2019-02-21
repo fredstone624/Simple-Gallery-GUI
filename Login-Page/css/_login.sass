@@ -1,0 +1,28 @@
+#login
+    height: 100vh
+    
+.card
+    background-color: rgba(229, 228, 255, 0.2)
+    margin-top: 30px
+
+.md-form 
+    label
+        color: #ffffff
+
+    input[type=text],
+    input[type=password]
+        &:focus:not([readonly])
+            border-bottom: 1px solid #8EDEF8
+            box-shadow: 0 1px 0 0 #8EDEF8
+
+        &:focus:not([readonly])+label
+            color: #8EDEF8
+
+    .form-control
+        color: #fff
+
+h6 
+    line-height: 1.7
+
+.navbar.navbar-dark form .md-form input:focus:not([readonly])
+    border-color: #8EDEF8

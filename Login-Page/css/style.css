@@ -1,11 +1,6 @@
 /* Common styles */
-#header {
-  height: 100vh;
-}
-
-#home {
+.bg-img-header {
   background: url("../image/bg-header.jpg") no-repeat center center/cover;
-  height: 100%;
 }
 
 .navbar {
@@ -37,9 +32,12 @@
   font-weight: 400;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding-left: 20px;
-  padding-right: 20px;
+.nav-item {
+  padding-left: 10px;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+  padding: 10px 20px;
 }
 
 /* Hamburger menu */
@@ -48,7 +46,8 @@
   height: 20px;
   position: relative;
   margin: 0px;
-  margin-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
@@ -107,7 +106,10 @@
 }
 
 /* End Hamburger menu */
-/* End common styles */
+#login {
+  height: 100vh;
+}
+
 .card {
   background-color: rgba(229, 228, 255, 0.2);
   margin-top: 30px;
@@ -127,35 +129,6 @@
 .md-form input[type=text]:focus:not([readonly]) + label,
 .md-form input[type=password]:focus:not([readonly]) + label {
   color: #8EDEF8;
-}
-
-.md-form input[type="checkbox"] + label:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 17px;
-  height: 17px;
-  z-index: 0;
-  border: 1.5px solid #fff;
-  border-radius: 1px;
-  margin-top: 2px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.md-form input[type="checkbox"]:checked + label:before {
-  top: -4px;
-  left: -3px;
-  width: 12px;
-  height: 22px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: transparent #00c851 #00c851 transparent;
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
-  -webkit-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
 }
 
 .md-form .form-control {
