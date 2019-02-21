@@ -10,27 +10,25 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <!-- Bootstrap core CSS -->
-    <link href="../common/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../common/css/bootstrap.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="../common/css/mdb.min.css" rel="stylesheet">
+    <link href="../common/css/mdb.css" rel="stylesheet">
     <!-- Custom styles -->
     <link href="css/style.css" rel="stylesheet">
     <!-- End include stylesheets -->
 
 </head>
-<body aria-busy="true">
+<body>
     <!-- Preloader -->
-    <!--
     <div id="mdb-preloader" class="flex-center">
         <div id="preloader-markup"></div>
     </div>
-    -->
     <!-- End preloader -->
 
     <!-- Section: Header -->
     <header class="header" id="header">
         <!-- Section: Navigatiom -->
-        <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" role="navigation">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" role="navigation">
             <a class="navbar-brand" href="#">
                 <img class="navbar-brand__image img-fluid" src="image/logo.png" alt="Логотип">
             </a>
@@ -43,57 +41,57 @@
                     <li class="nav-item"><a class="nav-link" href="#home">Домашняя</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-outline-info btn-rounded waves-effect" href="#login">Вход</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-outline-info btn-rounded waves-effect" href="#register">Регистрация</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-white" href="../Login-Page">Вход</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-white" href="../Register-Page">Регистрация</a></li>
                 </ul>
             </div>
         </nav>
         <!-- Section: Navigatiom -->
+    </header>
+    <!-- Section: Header -->
 
-        <!-- Section: Home -->
-        <div class="view intro-2" id="home">
+    <!-- Section: Main -->
+    <main id="main" role="main">
+
+        <!-- Section: Login -->
+        <section id="login" class="bg-img-header view intro-2">
             <div class="full-bg-img">
-                <div class="mask rgba-gray h-100 d-flex justify-content-center align-items-center">
+                <div class="mask rgba-gray h-100 flex-center">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-5">
+                            <div class="col-xl-6 col-lg-6 col-md-10 col-sm-12 mx-auto mt-5">
                                 <!--Form with header-->
                                 <div class="card wow fadeIn" data-wow-delay="0.3s">
-                                    <form class="form card-body">
+                                    <form action="/Home/Login" class="form card-body" method="post"> 
                                         <!--Header-->
-                                        <div class="form-header btn-info">
-                                            <h3><i class="fas fa-user mt-2 mb-2"></i> Авторизация:</h3>
+                                        <div class="form-header btn-info waves-effect waves-light">
+                                            <h3><i class="fas fa-sign-in-alt mt-2 mb-2"></i> Авторизация</h3>
                                         </div>
                                         <!--Header-->
 
                                         <!--Body-->
                                         <div class="md-form">
                                             <i class="fas fa-user prefix white-text"></i>
-                                            <input type="text" id="form-name" class="form-control validate white-text">
-                                            <label data-error="wrong" data-success="right" for="form-name">Your name</label>
+                                            <label for="UserName">Имя пользователя</label>
+                                            <input class="form-control white-text" data-val="true" data-val-required="Поле имя пользователя обязательно для ввода" id="UserName" name="UserName" type="text" value="" />
+                                            <span class="field-validation-valid form-text text-danger" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
                                         </div>
-
-                                        <div class="md-form d-flex flex-column">
+                                        <div class="md-form">
                                             <i class="fas fa-lock prefix white-text"></i>
-                                            <input type="password" id="form-pass" class="form-control validate white-text mb-3">
-                                            <label data-error="wrong" data-success="right" for="form-pass">Your password</label>
-
-                                            <div class="form-group align-self-end mb-1">
-                                                <input class="form-check-input" type="checkbox" id="checkbox624">
-                                                <label for="checkbox624" class="white-text form-check-label">Запомнить меня ?</label>
-                                            </div>
+                                            <label for="Password">Пароль</label>
+                                            <input class="form-control white-text mb-3" data-val="true" data-val-required="Поле пароль обязательно для ввода" id="Password" name="Password" type="password" />
+                                            <span class="field-validation-valid form-text text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span>
                                         </div>
-
-                                        
-
                                         <div class="text-center">
                                             <input type="submit" class="btn btn-info btn-lg" value="Войти" />
+
                                             <!--Grid row-->
                                             <div class="row mt-3">
                                                 <!--Grid column-->
                                                 <div class="col-md-12">
-                                                    <p class="font-small white-text d-flex justify-content-start m-0">Нету аккаунта? <a href="/Register" class="blue-text ml-1 font-weight-bold">
-                                                        Создать</a></p>
+                                                    <h6 class="white-text d-flex justify-content-start m-0">
+                                                        Нету аккаунта? <a class="blue-text ml-1 font-weight-bold" href="/Home/Register">Создать</a>
+                                                    </h6>
                                                 </div>
                                                 <!--Grid column-->
                                             </div>
@@ -101,12 +99,14 @@
 
                                             <hr>
 
-                                            <div class="inline-ul text-center d-flex justify-content-center">
+                                            <div class="inline-ul text-center flex-center">
+                                                <p class="white-text">Войти при помощи</p>
                                                 <a class="p-2 m-2 fa-lg tw-ic"><i class="fab fa-google white-text"></i></a>
                                                 <a class="p-2 m-2 fa-lg li-ic"><i class="fab fa-facebook-f white-text"></i></a>
                                             </div>
                                         </div>
                                     </form>
+
                                 </div>
                                 <!--/Form with header-->
                             </div>
@@ -114,20 +114,23 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Section: Home -->
-    </header>
-    <!-- Section: Header -->
+        </section>
+        <!-- Section: Login -->
+
+    </main>
+    <!-- Section: Main -->
 
     <!-- Include scripts -->
     <!-- JQuery -->
-    <script type="text/javascript" src="../common/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../common/js/jquery-3.3.1.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="../common/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="../common/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../common/js/bootstrap.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="../common/js/mdb.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/layout.js"></script>
     <!-- End include scripts -->
 
     <script>
