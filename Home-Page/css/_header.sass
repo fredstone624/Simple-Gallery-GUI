@@ -1,9 +1,5 @@
-.header
-    height: 700px
-
-#home
+.bg-img-header
     background: $header-bg no-repeat center center / cover
-    height: 100%
 
 .navbar
     background-color: $navbar
@@ -29,27 +25,6 @@
     &-item
         padding-left: 10px
 
-.active
-    &::after
-        content: " "
-        position: absolute
-        top: calc(50% - 2px)
-        left: 3px
-        width: 12px
-        height: 3px
-        background-color: $active-item
-
-.header-info
-    text-align: center
-
-    &__desc
-        font-size: 20px
-    
-    &__butt
-        margin-top: 15px
-        padding: 20px 40px
-        border-radius: 40px 10px
-
 .navbar.navbar-dark .navbar-nav .nav-item .nav-link
     padding: 10px 20px
 
@@ -59,7 +34,7 @@
     height: 20px
     position: relative
     margin: 0px
-     transform: rotate(0deg)
+    transform: rotate(0deg)
     transition: .5s ease-in-out
     cursor: pointer
 
