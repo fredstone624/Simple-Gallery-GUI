@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,18 +10,17 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <!-- Bootstrap core CSS -->
-    <link href="../common/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../common/css/bootstrap.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="../common/css/mdb.min.css" rel="stylesheet">
+    <link href="../common/css/mdb.css" rel="stylesheet">
     <!-- Material ScrollTop stylesheet -->
-    <link href="css/material-scrolltop.css" rel="stylesheet">
+    <link href="../common/css/material-scrolltop.css" rel="stylesheet">
     <!-- Custom styles -->
     <link href="css/style.css" rel="stylesheet">
     <!-- End include stylesheets -->
 
 </head>
-
-<body aria-busy="true">
+<body>
     <!-- Preloader -->
     <div id="mdb-preloader" class="flex-center">
         <div id="preloader-markup"></div>
@@ -32,7 +30,7 @@
     <!-- Section: Header -->
     <header class="header" id="header">
         <!-- Section: Navigatiom -->
-        <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" role="navigation">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" role="navigation">
             <a class="navbar-brand" href="#">
                 <img class="navbar-brand__image img-fluid" src="image/logo.png" alt="Логотип">
             </a>
@@ -42,35 +40,39 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="nav navbar-nav smooth-scroll text-uppercase">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Домашняя</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Домашняя</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-outline-info btn-rounded waves-effect" href="#login">Вход</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-outline-info btn-rounded waves-effect" href="#register">Регистрация</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-white" href="#login">Вход</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-white" href="#register">Регистрация</a></li>
                 </ul>
             </div>
         </nav>
         <!-- Section: Navigatiom -->
 
         <!-- Section: Home -->
-        <div class="view intro-2" id="home">
+        <section id="home" class="bg-img-header view intro-2 z-depth-2 jarallax">
             <div class="full-bg-img">
-                <div class="mask flex-center rgba-gray">
-                    <div class="container white-text wow fadeInUp header-info">
-                        <h1 class="h1-responsive font-weight-bold header-info__main">Добро пожаловать!</h1>
-                        <p class="header-info__desc">На веб-сервис &laquo;Simple Gallery&raquo;</p>
-                        <a class="btn btn-white btn-rounded waves-effect header-info__butt" role="button" href="/Profile" title="Переход к галереи">Перейти
-                            к галереи</a>
+                <div class="mask rgba-gray">
+                    <div class="container-fluid flex-center">
+                        <div class="row">
+                            <div class="col-md-12 text-center white-text wow fadeInUp">
+                                <h2 class="display-4 font-weight-bold pt-5 mb-2">Добро пожаловать!</h2>
+                                <hr class="hr-light" />
+                                <h4 class="my-4">На веб-сервис &laquo;Simple Gallery&raquo;</h4>
+                                <a class="btn btn-outline-white waves-effect waves-light" href="/Register-Page">Загеристрироваться</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Section: Home -->
     </header>
     <!-- Section: Header -->
 
     <!-- Section: Main -->
-    <main id="main">
+    <main id="main" role="main">
         <!-- Section: About -->
         <section id="about" class="text-center">
             <!-- Container -->
@@ -78,9 +80,9 @@
                 <h2 class="h1-responsive font-weight-bold mb-5">О нас</h2>
 
                 <!-- Grid row -->
-                <div class="row wow bounceIn">
+                <div class="row">
                     <!-- Grid column -->
-                    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4 wow bounceIn">
                         <div class="view overlay rounded z-depth-2 mb-4">
                             <img class="img-fluid" src="image/about/thumbnail/01.jpg" alt="About image 1">
                             <a>
@@ -99,7 +101,7 @@
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4 wow bounceIn">
                         <div class="view overlay rounded z-depth-2 mb-4">
                             <img class="img-fluid" src="image/about/thumbnail/02.jpg" alt="About image 2">
                             <a>
@@ -117,7 +119,7 @@
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-lg-4 col-md-6 mb-0">
+                    <div class="col-lg-4 col-md-6 mb-0 wow bounceIn">
                         <div class="view overlay rounded z-depth-2 mb-4">
                             <img class="img-fluid" src="image/about/thumbnail/03.jpg" alt="About image 3">
                             <a>
@@ -180,9 +182,9 @@
         <!-- Section: Map -->
         <section id="maps">
             <!--Google map-->
-            <div id="map-container" class="z-depth-1-half map-container" style="height: 500px">
-                <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                    style="border:0" allowfullscreen></iframe>
+            <div id="map-container" class="z-depth-1-half map-container">
+                <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
         <!-- Section: Map -->
@@ -348,19 +350,22 @@
 
     <!-- Include scripts -->
     <!-- JQuery -->
-    <script type="text/javascript" src="../common/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../common/js/jquery-3.3.1.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="../common/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="../common/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../common/js/bootstrap.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="../common/js/mdb.js"></script>
     <!-- Material-scrolltop plugin -->
-    <script type="text/javascript" src="js/material-scrolltop.js"></script>
+    <script type="text/javascript" src="../common/js/material-scrolltop.js"></script>
     <!-- Custom JavaScript -->
     <script src="js/layout.js"></script>
     <!-- End include scripts -->
 
-</body>
+    <script>
+        new WOW().init();
+    </script>
 
+</body>
 </html>
